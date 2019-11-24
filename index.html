@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html">
+	<title>index.html</title>
+    <!--<link rel="stylesheet" href="/static/css/style.css">-->
+</head>
+<body>
+<div id="index">
+
+  <h1 >Ｆｌａｓｋ　チュートリアル</h1>
+  <hr>
+  <p>このサイトはFlaskを利用したチャットボットAPIのチュートリアルサイトです。<br>
+    下記の開始ボタンをクリックすると会話が開始されます。</p>
+    
+    <div id="start">
+    
+        <span>下記のボタンを押してください。</span><br>
+        <button  type="button" name="request" value="開始">
+            <a href="{{url_for('req')}}">開始</a>
+        </button>
+    
+    </div>
+    <div id="userid">
+        <p>
+            ユーザＩＤ　　　　:<span>{{ userid }}</span><br>
+        </p>
+    </div>
+
+</div>
+    
+</body>
+</html>
